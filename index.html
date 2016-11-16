@@ -1,105 +1,570 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Vaibhavwalvekar.GitHub.io : ">
+<head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Vaibhavwalvekar.GitHub.io</title>
-  </head>
+    <title>Vaibhav Walvekar</title>
 
- 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <body>
-      <div class="wrapper">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-      
-        <div id="title">
-          <h1>Academic Projects of Vaibhav Walvekar</h1>
-      <img src="images/UW-Logo.jpg">
-          <p>Master of Science in Information Management - 2017</p>
-          <hr>
-                
-        </div>        
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-<section class="main-content">
-  
-  <p><a href="https://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/VisualizationofAshesCricketSeries/VisualizationofAshesSeriesResults" target="_blank">
-    <H1>Visualization of Historic Ashes Cricket Series</H1>
-    <fieldset>
-    <img src="images/ashes.png">
-  </a></p>
-  <div id="info">
-    <p> The visualization created in Tableau shows how Australia and England players have performed in the historic Ashes Test Series.
-    <li>Presented data from 1882 to 2015- Entire history of Ashes.
-    <li>Captured and cleaned data to accommodate requirements.
-    <li>First graph shows top Batsman performance from both the teams, second shows the team results of all the series and the
-    third one shows how top Bowlers have performed over the years.
-    <li>Using Tableau's hover-on feature, user can identify crucial statistics such as average, number of matches played etc.
-    <li>User can apply custom filters on teams, players and results to view data as required.
-    <br>
-    <H3  style="color: #606c71;">Inferences</H3>
-    <li>Results- <b>Australia:</b> 134, <b>England:</b> 99, <b>Drawn:</b> 88.
-    <li>Top Batsman- <b>Sir Don Bradman</b> for Australia, <b>JB Hobbs</b> for England.
-    <li>Top Bowler- <b>Shane Warne</b> for Australia, <b>Ian Botham</b> for England.
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Welcome!</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About Me</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>SkillSet</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Related Projects</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 style="color:white;">Hi! This is Vaibhav Walvekar</h1>
+            <h3 style="color:white;">Master of Science in Information Management - 2017</h3>
+            <h3 style="color:white;">University of Washington, Seattle, WA</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg"  >About Me</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>"Factual analysis surmounts logic and I possess the data toolbox to unravel those Facts" </h2>
+                    <h2>I am a Data Analyst, with interests in Data Management, Processing and Reporting.</h2>
+                    <p class="lead">I possess excellent Analytical skills and passion towards Data driven decision making.<br>
+                    Currently working towards Data Science and Business Intelligence Specialization at University of Washington.</p>
+                    <a href="Resume_Vaibhav_Walvekar.pdf" class="btn btn-lg btn-light">Know More</a>
+                    <!--a href="Resume_Vaibhav_Walvekar.pdf" class="btn btn-lg btn-light">Resume</a-->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>SkillSet</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-database fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Database Design</strong>
+                                </h4>
+                                <p>Skills - Database Design, SQL Server, SSMS, SSIS<br>
+                                Exposure Level - Expert</p>
+                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-bar-chart fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Datawarehouse & Business Intelligence</strong>
+                                </h4>
+                                <p>Skills - SSRS, Tableau, Power BI, D3<br>
+                                Exposure Level - Expert</p>
+                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-briefcase fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Data Science & Analytics </strong>
+                                </h4>
+                                <p>Skills - Python, R Language, Data Cleaning, Data Exploration <br>
+                                Exposure Level - Intermediate</p>
+                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-book fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Statistics & Machine Learning </strong>
+                                </h4>
+                                <p>Skills - Statistical Algorithms, Supervised & UnSupervised Learning <br>
+                                Exposure Level - Basic</p>
+                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Related Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <h3>Data Visualization</h3>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                
+                                    <img class="img-portfolio img-responsive" src="img/DataViz2.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+
+                                    <!--p>                     
+                                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                        Short Description
+                                      </a>
+                                    </p-->
+                                    <div class="collapse" id="collapseExample1">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="https://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/DataVisualizationHDI/Story1"> 
+                                            Tableau Dashboard </a></li> 
+                                            <li> <a href="https://drive.google.com/file/d/0B-wcpfwIq1EXTUY1RVBjTGNGcVU/view"> 
+                                            Project Document</a></li>   
+                                            <li><u>Data Source</u> - UN and World Bank website</li>
+                                            <li><u>What is it About?</u> - This is an exploratory visualization which tries to establish most important factors for good quality life (HDI). In conclusion life expectancy at birth, Gender equality and Gross Income per person are the most important factors.</li>
+                                            <li><u>Highlights</u> - Understanding background of the domain, Extensive Data Cleaning and Thorough Analysis </li>
+                                        </ul>                                                                                                                                
+                                       </div>
+                                      </div>
+                                    </div>
+                            </div>
+       
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/Capture.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExampleProjectile" aria-expanded="false" aria-controls="collapseExampleProjectile">
+                                    <div class="collapse" id="collapseExampleProjectile">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="http://vaibhavwalvekar.github.io/ProjectileMotion/">   
+                                            Project Link </a></li>
+                                            <li> <a href="Projectile_Motion_IEEE_Paper.pdf"> 
+                                            Project Document</a></li>    
+                                            <li><u>Tools</u> - JavaScript, HTML, CSS , D3 Library</li>
+                                            <li><u>What is it About?</u> - It is an Explorable Explanation about Projectile Motion which has many applications in day to day life. This application can be utilized by Teachers as a teaching material.</li>
+                                            <li><u>Highlights</u> - Innovative solution to learn concepts of Projectile Motion using Visualization, Simulation and Game, Extensive use of D3 library, Well documented Project (IEEE format)</li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                        
+                        </div>
+                        <br>
+                        <div class="row">
+                        <!--p>                     
+                                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExampleMoreProjects" aria-expanded="false" aria-controls="collapseExampleMoreProjects">
+                                        More Projects
+                                      </a>
+                                    </p>
+                                    <div class="collapse" id="collapseExampleMoreProjects">
+                                      <div class="card card-block"-->
+                                        
+                                     
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/LiteracyD3.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExampleLiteracy" aria-expanded="false" aria-controls="collapseExampleLiteracy">
+                                    <div class="collapse" id="collapseExampleLiteracy">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="http://vaibhavwalvekar.github.io/D3/">   
+                                            Project Link </a></li>
+                                            <li> <a href="Interactive Visualization Software Doc.pdf"> 
+                                            Project Document</a></li>  
+                                            <li><u>Data</u> - Literacy Rate of Indian States for past 4 decades</li>  
+                                            <li><u>Tools</u> - JavaScript, HTML, CSS , D3 Library</li>
+                                            <li><u>What is it About?</u> - This visualization was developed to understand trends in Literacy rate of Indian States. It goes into granularity by Gender and filters States based on range of Literacy Percentage.</li>
+                                            <li><u>Highlights</u> - Implementation of number of interactive features using JS (particularly D3) and Jquery</li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                        <div class="portfolio-item">                                     
+                                    <img class="img-portfolio img-responsive" src="img/DataViz.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <div class="collapse" id="collapseExample">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="http://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/BanksCustomeranalysisoverUK/Story1">   
+                                            Tableau Dashboard </a></li>    
+                                            <li><u>Data</u> - Customer Base of UK Banks (dummy dataset)</li>
+                                            <li><u>What is it About?</u> - It answers analytical questions like what are the Demographics, Location and Profile of Customers, which are important for Real banks all over the world.</li>
+                                            <li><u>Highlights</u> - Highly Interactive, Insightful and StoryTelling Dashboard</li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                            
+                            
+                        </div>
+                         <!--/div>
+                        </div-->
+                        </div>
+                        <hr style="height:1px;border:none;color:#2574A9;background-color:#2574A9;" />
+                        <div class="row">
+                        <h3>Data Science & Analytics</h3>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/DataExploration.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                    <div class="collapse" id="collapseExample2">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="Portfolio_NYCFlights.pdf">   
+                                            NYC FLights Dataset </a></li>    
+                                            <li><u>Data</u> - Open Source R dataset</li>
+                                            <li><u>Tools</u> - R Language</li>
+                                            <li><u>What is it About?</u> - These projects </li>
+                                            <li><u>Highlights</u> - </li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/ShinyApp.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                    <div class="collapse" id="collapseExample3">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="https://vaibhav-walvekar.shinyapps.io/Plane_Manufacturers_USA/">   
+                                            Project Link </a></li>   
+                                            <li><u>Tools</u> - R Language - Shinny Api</li>
+                                            <li><u>What is it About?</u> - It helps in doing basic researching with respect to Number of Plane models used in USA by different Manufacturers over the past 6 decades.  </li>
+                                            <li><u>Highlights</u> - Use of ShinyApp API, which is used to host web applications.</li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <!--hr style="height:1px;border:none;color:#2574A9;background-color:#2574A9;" />
+                        <div class="row">
+                        <h3>Database Warehousing & Business Intelligence</h3>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/DataViz.jpg">
+                                    <p>                     
+                                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Short Description
+                                      </a>
+                                    </p>
+                                    <div class="collapse" id="collapseExample">
+                                      <div class="card card-block">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                      </div>
+                                    </div>
+                            </div>
+       
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/DataViz2.jpg">
+<p>                     
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+    Short Description
+  </a>
+</p>
+<div class="collapse" id="collapseExample1">
+  <div class="card card-block">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
-  </fieldset>
-  <HR><HR>
-  <p><a href="https://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/DataVisualizationAssignment1_5/Dashboard3" target="_blank">
-    <H1>Visualization Determining Antibiotic Effectiveness</H1>
-    <fieldset>
-    <img src="images/antibiotics.jpg">
-  </a></p>
-  <div id="info">
-    <p> The visualization above presents the log MIC value for 3 drugs namely Neomycin, Penicillin and Streptomycin plotted against a list of Bacteria.
-    
-    <li>The different colors represent the different antibiotics.
-    <li>The lower the MIC value, the better the performance of the drug against that bacteria.
-        <li>The positive and the negative gram stained bacteria have been split into 2 columns and represented using different symbols.
-    <li>Since the range of the values were quite wide, we have taken the log (base 10) of those value to represent them visually.
-    <li>Multiple bars are presented in order to compare which antibiotics work the best for that particular bacteria.
-        <li>Looking at the graph, the best antibiotic for a particular bacteria can be determined.
-  </div>
-  </fieldset>
-  <HR><HR>
-  <p><a href="https://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/DataVisualizationHDI/Story1" target="_blank">
-    <H1>Visualizing socio-economic parameters of countries to determine most influencing parameters for Human Development Index (HDI)</H1>
-    <fieldset>
-    <img src="images/hdiComparison.jpg">
-  </a></p>
-  <div id="info">
-    <p> The visualization above presents the log MIC value for 3 drugs namely Neomycin, Penicillin and Streptomycin plotted against a list of Bacteria.
-    
-    <li>The different colors represent the different antibiotics.
-    <li>The lower the MIC value, the better the performance of the drug against that bacteria.
-        <li>The positive and the negative gram stained bacteria have been split into 2 columns and represented using different symbols.
-    <li>Since the range of the values were quite wide, we have taken the log (base 10) of those value to represent them visually.
-    <li>Multiple bars are presented in order to compare which antibiotics work the best for that particular bacteria.
-        <li>Looking at the graph, the best antibiotic for a particular bacteria can be determined.
-  </div>
-  </fieldset>
-  <HR><HR>
-  <p><a href="https://public.tableau.com/profile/vaibhav.walvekar#!/vizhome/BanksCustomeranalysisoverUK/Story1" target="_blank">
-    <H1>Visualization of Bank's Customer analysis over UK region</H1>
-    
-    <img src="images/customerAnalysis.jpg">
-  </a></p>
-  <div id="info">
-    <p> The visualization above presents the log MIC value for 3 drugs namely Neomycin, Penicillin and Streptomycin plotted against a list of Bacteria.
-    
-    <li>The different colors represent the different antibiotics.
-    <li>The lower the MIC value, the better the performance of the drug against that bacteria.
-        <li>The positive and the negative gram stained bacteria have been split into 2 columns and represented using different symbols.
-    <li>Since the range of the values were quite wide, we have taken the log (base 10) of those value to represent them visually.
-    <li>Multiple bars are presented in order to compare which antibiotics work the best for that particular bacteria.
-        <li>Looking at the graph, the best antibiotic for a particular bacteria can be determined.
-  </div>
-  
-</section>
+</div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div-->
+                        <hr style="height:1px;border:none;color:#2574A9;background-color:#2574A9;" />
+                        <div class="row">
+                        <h3>Statistics & Machine Learning</h3>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                            <img class="img-portfolio img-responsive" src="img/Stats.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExampleStat" aria-expanded="false" aria-controls="collapseExampleStat">
+                                    <div class="collapse" id="collapseExampleStat">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="https://github.com/vaibhavwalvekar/ML-Algorithms">   
+                                            Project Link </a></li>
+                                            <li><u>Data</u> - Open source R datasets</li>  
+                                            <li><u>Tools</u> - R Language, Machine Learning Algorithms</li>
+                                            <li><u>What is it About?</u> - </li>
+                                            <li><u>Highlights</u> - </li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                            <img class="img-portfolio img-responsive" src="img/MachineLearning.jpg" class="btn btn-primary" data-toggle="collapse" href="#collapseExampleML" aria-expanded="false" aria-controls="collapseExampleML">
+                                    <div class="collapse" id="collapseExampleML">
+                                      <div class="card card-block">
+                                        <div id="menu"> 
+                                        <ul>
+                                            <li> <a href="https://github.com/vaibhavwalvekar/ML-Algorithms">   
+                                            Project Link </a></li>
+                                            <li><u>Data</u> - Open source R datasets</li>  
+                                            <li><u>Tools</u> - R Language, Machine Learning Algorithms</li>
+                                            <li><u>What is it About?</u> - </li>
+                                            <li><u>Highlights</u> - </li>  
+                                        </ul>                                        
+                                                                                  
+                                       </div> 
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <!-- <h3>The buttons below are impossible to resist.</h3>-->
+                    <a href="Resume_Vaibhav_Walvekar.pdf" class="btn btn-lg btn-light">Resume</a>
+                    <!--<a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map 
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>-->
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Contact Details</strong>
+                    </h4>
+                    <!--<p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>-->
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (206) 335-8257</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:vaibhavw@uw.edu">vaibhavw@uw.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/vaibhav.walvekar.7"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vaibhavwalvekar"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <!--<li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>-->
+                    </ul>
+                    <!--<hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>-->
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        </section>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
 </body>
-
 
 </html>
